@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap");
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.5;
+  background-image: url("../assets/Hero-Background-notecode@2x.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e9c46a;
+  overflow-x: hidden;
+  padding: 2.25rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.monaco-container {
+  padding: 16px 8px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.monaco-footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-share {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  span {
+    font-size: 12px;
+  }
+}
+
+footer-options {
+  display: flex;
+}
+
+@media screen and (min-width: 720px) {
+}
