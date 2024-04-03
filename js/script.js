@@ -1,2 +1,3 @@
-// Add some interactivity to the website
-console.log("Hello, world!");
+import { setupMonacoEditor } from "./monaco-editor";
+
+setupMonacoEditor();

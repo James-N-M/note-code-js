@@ -44,42 +44,6 @@
         </div>
       </div>
     </main>
-
-    <script src="./js/script.js"></script>
-    <script>
-      var require = {
-        paths: {
-          vs: "https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs",
-        },
-      };
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs/loader.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs/editor/editor.main.nls.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs/editor/editor.main.js"></script>
-    <script>
-      monaco.editor.create(document.getElementById("monaco-editor"), {
-        value: `<html>
-<head>
-    <title>HTML Sample</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <style type="text/css">
-        h1 {
-        color: #CCA3A3;
-        }
-    </style>
-</head>
-<body>
-<h1>Heading No.1</h1>
-<input disabled type="button" value="Click me" />
-</body>
-</html>
-`,
-        language: "html",
-        theme: "vs-light",
-        scrollbar: {
-          vertical: "hidden",
-        },
-      });
-    </script>
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>
