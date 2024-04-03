@@ -35,3 +35,5 @@ export function setupMonacoEditor() {
     theme: "vs-light",
   });
 }
+
+export function toggleTheme() {}
