@@ -5,6 +5,8 @@ import cssWorker from "monaco-editor/esm/vs/language/css/css.worker?worker";
 import htmlWorker from "monaco-editor/esm/vs/language/html/html.worker?worker";
 import tsWorker from "monaco-editor/esm/vs/language/typescript/ts.worker?worker";
 
+let monacoEditor;
+
 export function setupMonacoEditor() {
   self.MonacoEnvironment = {
     getWorker(_, label) {
@@ -36,4 +38,10 @@ export function setupMonacoEditor() {
   });
 }
 
-export function toggleTheme() {}
+export function toggleTheme(theme) {
+  monaco.editor.setTheme(theme);
+}
+
+// export function toggleLanguage(language) {
+//   monaco.editor.setModelLanguage(monaco.editor.getModel, "javascript");
+// }

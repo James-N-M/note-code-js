@@ -1,10 +1,12 @@
 import { setupMonacoEditor } from "./monaco-editor";
 import { toggleTheme } from "./monaco-editor";
 
-let toggleButton = document.getElementById("toggleTheme");
-
 setupMonacoEditor();
 
-toggleButton.onclick = () => {
-  toggleTheme();
-};
+document
+  .getElementById("theme-select")
+  .addEventListener("change", (event) => toggleTheme(event.target.value));
+
+  // document
+  // .getElementById("language-select")
+  // .addEventListener("change", (event) => toggleLanguage(event.target.value));
